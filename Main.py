@@ -67,7 +67,7 @@ if prompt := st.chat_input(placeholder="What is this data about?"):
         st.stop()
 
     llm = ChatOpenAI(
-        temperature=0, model="gpt-4-turbo", openai_api_key=openai_api_key, streaming=True
+        temperature=0, model="gpt-3.5-turbo-0125", openai_api_key=openai_api_key, streaming=True
     )
 
     pandas_df_agent = create_pandas_dataframe_agent(
